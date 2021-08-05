@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-AlternatingCharacters.Run();
+MakingAnagrams.Run();
