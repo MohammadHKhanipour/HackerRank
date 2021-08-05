@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-MakingAnagrams.Run();
+BirthdayCakeCandles.Run();
