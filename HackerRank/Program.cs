@@ -1,1 +1,3 @@
-﻿using System;
+﻿using HackerRank.Challenges;
+
+AlternatingCharacters.Run();
