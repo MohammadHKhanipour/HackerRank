@@ -6,7 +6,7 @@ namespace HackerRank.Challenges
 {
     class MakingAnagrams
     {
-        static int getResult(string input1, string input2)
+        static int GetResult(string input1, string input2)
         {
             int counter = 0;
 
@@ -54,7 +54,7 @@ namespace HackerRank.Challenges
         {
             string input1 = Console.ReadLine();
             string input2 = Console.ReadLine();
-            Console.WriteLine(getResult(input1, input2));
+            Console.WriteLine(GetResult(input1, input2));
         }
     }
 }

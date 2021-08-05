@@ -5,7 +5,7 @@ namespace HackerRank.Challenges
 {
     class BirthdayCakeCandles
     {
-        static int result(int[] input)
+        static int GetResult(int[] input)
         {
             int max = input.Max();
             return input.Count(x => x == max);
@@ -19,7 +19,7 @@ namespace HackerRank.Challenges
 
             array = Console.ReadLine().Split(' ').Select(x=>Convert.ToInt32(x)).ToArray();
 
-            Console.WriteLine(result(array));
+            Console.WriteLine(GetResult(array));
         }
     }
 }

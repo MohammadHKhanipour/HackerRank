@@ -4,7 +4,7 @@ namespace HackerRank.Challenges
 {
     class AlternatingCharacters
     {
-        static int result(string input)
+        static int GetResult(string input)
         {
             int cursor = 0;
             int counter = 0;
@@ -25,7 +25,7 @@ namespace HackerRank.Challenges
 
             for (int i = 0; i < input; i++)
             {
-                res[i] = result(Console.ReadLine());
+                res[i] = GetResult(Console.ReadLine());
             }
 
             foreach (var item in res)
