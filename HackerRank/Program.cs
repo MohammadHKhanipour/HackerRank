@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-BirthdayCakeCandles.Run();
+ServiceLane.Run();
