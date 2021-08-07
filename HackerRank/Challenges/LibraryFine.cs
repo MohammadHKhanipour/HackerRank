@@ -5,7 +5,7 @@ namespace HackerRank.Challenges
 {
     class LibraryFine
     {
-        public static int GetResult(int[] returnedDate, int[] recievedDate)
+        static int GetResult(int[] returnedDate, int[] recievedDate)
         {
             if (returnedDate[2] > recievedDate[2])
                 return 10000;

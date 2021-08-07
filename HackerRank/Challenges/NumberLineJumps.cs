@@ -5,7 +5,7 @@ namespace HackerRank.Challenges
 {
     class NumberLineJumps
     {
-        public static string GetResult(int firstKangarooX, int firstKangarooV , int secondKangarooX, int secondKangarooV)
+        static string GetResult(int firstKangarooX, int firstKangarooV , int secondKangarooX, int secondKangarooV)
         {
             if (firstKangarooV > secondKangarooV)
                 if ((secondKangarooX - firstKangarooX) % (secondKangarooV - firstKangarooV) == 0)

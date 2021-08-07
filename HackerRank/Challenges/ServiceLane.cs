@@ -5,7 +5,7 @@ namespace HackerRank.Challenges
 {
     class ServiceLane
     {
-        public static int[] GetResult(int[] width, int[,] cases, int casesCount)
+        static int[] GetResult(int[] width, int[,] cases, int casesCount)
         {
             int[] result = new int[casesCount];
 
