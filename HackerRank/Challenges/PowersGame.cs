@@ -15,9 +15,9 @@ namespace HackerRank.Challenges
 
             for (int i = 0; i < times; i++)
             {
-                int n = Convert.ToInt32(Console.ReadLine());
+                int input = Convert.ToInt32(Console.ReadLine());
 
-                string result = GetResult(n);
+                string result = GetResult(input);
 
                 textWriter.WriteLine(result);
             }
