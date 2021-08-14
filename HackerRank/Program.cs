@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-FindDigits.Run();
+SequenceEquation.Run();
