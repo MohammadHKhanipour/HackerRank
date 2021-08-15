@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-SequenceEquation.Run();
+SimpleArraySum.Run();
