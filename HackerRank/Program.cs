@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-SimpleArraySum.Run();
+CountingValleys.Run();
