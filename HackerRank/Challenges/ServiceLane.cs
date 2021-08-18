@@ -5,7 +5,7 @@ namespace HackerRank.Challenges
 {
     class ServiceLane
     {
-        static int[] GetResult(int[] width, int[,] cases, int casesCount)
+        static int[] GetResults(int[] width, int[,] cases, int casesCount)
         {
             int[] result = new int[casesCount];
 
@@ -40,7 +40,7 @@ namespace HackerRank.Challenges
                 cases[i, 1] = Convert.ToInt32(temp[1]);
             }
 
-            var result = GetResult(width, cases, casesCount);
+            var result = GetResults(width, cases, casesCount);
 
             foreach (var item in result)
             {

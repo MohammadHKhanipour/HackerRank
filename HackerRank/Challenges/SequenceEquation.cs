@@ -5,7 +5,7 @@ namespace HackerRank.Challenges
 {
     class SequenceEquation
     {
-        static int[] GetResult(int[] inputs)
+        static int[] GetResults(int[] inputs)
         {
             int[] results = new int[inputs.Length];
 
@@ -33,7 +33,7 @@ namespace HackerRank.Challenges
 
             inputs = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
 
-            int[] results = GetResult(inputs);
+            int[] results = GetResults(inputs);
 
             foreach (int item in results)
             {
