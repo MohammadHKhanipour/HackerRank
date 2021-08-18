@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-JumpingOnTheClouds.Run();
+BreakingTheRecords.Run();
