@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-BreakingTheRecords.Run();
+CatsAndAMouse.Run();
