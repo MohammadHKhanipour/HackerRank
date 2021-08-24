@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-AppleAndOrange.Run();
+TimeConversion.Run();
