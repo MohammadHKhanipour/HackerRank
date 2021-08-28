@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-MarsExploration.Run();
+SaveThePrisoner.Run();
