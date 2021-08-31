@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-SalesByMatch.Run();
+TheHurdleRace.Run();
