@@ -15,7 +15,7 @@ namespace HackerRank.Challenges
             {
                 if (tempList.Contains(item))
                     continue;
-                pairCounter += socks.Where(x => x == item).Count() / 2;
+                pairCounter += socks.Count(x => x == item) / 2;
                 tempList.Add(item);
             }
 
