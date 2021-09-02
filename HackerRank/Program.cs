@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-TheHurdleRace.Run();
+AngryProfessor.Run();
