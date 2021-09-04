@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-AngryProfessor.Run();
+CompareTheTriplets.Run();
