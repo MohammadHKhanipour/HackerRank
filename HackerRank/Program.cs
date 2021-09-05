@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-CompareTheTriplets.Run();
+MigratoryBirds.Run();
