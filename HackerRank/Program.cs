@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-MigratoryBirds.Run();
+ViralAdvertising.Run();
