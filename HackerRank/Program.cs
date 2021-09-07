@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-ViralAdvertising.Run();
+AVeryBigSum.Run();
