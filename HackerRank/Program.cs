@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-AVeryBigSum.Run();
+PlusMinus.Run();
