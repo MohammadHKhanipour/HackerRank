@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-PlusMinus.Run();
+BillDivison.Run();
