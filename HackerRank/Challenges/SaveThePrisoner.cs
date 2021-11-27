@@ -1,31 +1,27 @@
-﻿using System;
-using System.Linq;
+﻿namespace HackerRank.Challenges;
 
-namespace HackerRank.Challenges
+class SaveThePrisoner
 {
-    class SaveThePrisoner
+    static int GetResult(int numberOfPrisoners, int numberOfSweets, int chairNumber) => ((chairNumber - 1 + numberOfSweets - 1) % numberOfPrisoners) + 1;
+
+    public static void Run()
     {
-        static int GetResult(int numberOfPrisoners, int numberOfSweets, int chairNumber) => ((chairNumber - 1 + numberOfSweets - 1) % numberOfPrisoners) + 1;
+        int count = Convert.ToInt32(Console.ReadLine());
 
-        public static void Run()
+        int[] results = new int[count];
+
+        for (int i = 0; i < count; i++)
         {
-            int count = Convert.ToInt32(Console.ReadLine());
+            int[] inputs = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
 
-            int[] results = new int[count];
+            int numberOfPrisoners = inputs[0];
+            int numberOfSweets = inputs[1];
+            int chairNumber = inputs[2];
 
-            for (int i = 0; i < count; i++)
-            {
-                int[] inputs = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
-
-                int numberOfPrisoners = inputs[0];
-                int numberOfSweets = inputs[1];
-                int chairNumber = inputs[2];
-
-                results[i] = GetResult(numberOfPrisoners, numberOfSweets, chairNumber);
-            }
-
-            for (int i = 0; i < count; i++)
-                Console.WriteLine(results[i]);
+            results[i] = GetResult(numberOfPrisoners, numberOfSweets, chairNumber);
         }
+
+        for (int i = 0; i < count; i++)
+            Console.WriteLine(results[i]);
     }
 }

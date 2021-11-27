@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-namespace HackerRank.Challenges
+﻿namespace HackerRank.Challenges
 {
     class PowersGame
     {

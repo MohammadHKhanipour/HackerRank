@@ -1,17 +1,13 @@
-﻿using System;
-using System.Linq;
+﻿namespace HackerRank.Challenges;
 
-namespace HackerRank.Challenges
+class AVeryBigSum
 {
-    class AVeryBigSum
+    public static void Run()
     {
-        public static void Run()
-        {
-            _ = Console.ReadLine();
+        _ = Console.ReadLine();
 
-            long[] numbers = Console.ReadLine().Split(' ').Select(x => long.Parse(x)).ToArray();
+        long[] numbers = Console.ReadLine().Split(' ').Select(x => long.Parse(x)).ToArray();
 
-            Console.WriteLine(numbers.Sum());
-        }
+        Console.WriteLine(numbers.Sum());
     }
 }

@@ -1,44 +1,40 @@
-﻿using System;
-using System.Linq;
+﻿namespace HackerRank.Challenges;
 
-namespace HackerRank.Challenges
+class SequenceEquation
 {
-    class SequenceEquation
+    static int[] GetResults(int[] inputs)
     {
-        static int[] GetResults(int[] inputs)
+        int[] results = new int[inputs.Length];
+
+        int[] indexes = new int[inputs.Length];
+
+        for (int i = 0; i < inputs.Length; i++)
         {
-            int[] results = new int[inputs.Length];
-
-            int[] indexes = new int[inputs.Length];
-
-            for (int i = 0; i < inputs.Length; i++)
-            {
-                int num = inputs[i];
-                indexes[num - 1] = i + 1;
-            }
-
-            for (int i = 0; i < inputs.Length; i++)
-            {
-                results[i] = indexes[indexes[i] - 1];
-            }
-
-            return results;
+            int num = inputs[i];
+            indexes[num - 1] = i + 1;
         }
 
-        public static void Run()
+        for (int i = 0; i < inputs.Length; i++)
         {
-            int inputCount = Convert.ToInt32(Console.ReadLine());
+            results[i] = indexes[indexes[i] - 1];
+        }
 
-            int[] inputs = new int[inputCount];
+        return results;
+    }
 
-            inputs = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+    public static void Run()
+    {
+        int inputCount = Convert.ToInt32(Console.ReadLine());
 
-            int[] results = GetResults(inputs);
+        int[] inputs = new int[inputCount];
 
-            foreach (int item in results)
-            {
-                Console.WriteLine(item);
-            }
+        inputs = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+
+        int[] results = GetResults(inputs);
+
+        foreach (int item in results)
+        {
+            Console.WriteLine(item);
         }
     }
 }

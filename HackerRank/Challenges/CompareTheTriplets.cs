@@ -1,35 +1,31 @@
-﻿using System;
-using System.Linq;
+﻿namespace HackerRank.Challenges;
 
-namespace HackerRank.Challenges
+class CompareTheTriplets
 {
-    class CompareTheTriplets
+    static int[] GetResults(int[] aliceRating, int[] bobRating)
     {
-        static int[] GetResults(int[] aliceRating, int[] bobRating)
+        int[] points = { 0, 0 };
+
+        for (int i = 0; i < 3; i++)
         {
-            int[] points = {0,0};
-
-            for (int i = 0; i < 3; i++)
-            {
-                if (aliceRating[i] > bobRating[i])
-                    points[0]++;
-                else if (aliceRating[i] < bobRating[i])
-                    points[1]++;
-                else
-                    continue;
-            }
-
-            return points;
+            if (aliceRating[i] > bobRating[i])
+                points[0]++;
+            else if (aliceRating[i] < bobRating[i])
+                points[1]++;
+            else
+                continue;
         }
 
-        public static void Run()
-        {
-            int[] aliceRating = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
-            int[] bobRating = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+        return points;
+    }
 
-            int[] results = GetResults(aliceRating, bobRating);
+    public static void Run()
+    {
+        int[] aliceRating = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+        int[] bobRating = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
 
-            Console.WriteLine($"{results[0]} {results[1]}");
-        }
+        int[] results = GetResults(aliceRating, bobRating);
+
+        Console.WriteLine($"{results[0]} {results[1]}");
     }
 }

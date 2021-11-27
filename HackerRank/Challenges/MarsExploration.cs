@@ -1,28 +1,25 @@
-﻿using System;
+﻿namespace HackerRank.Challenges;
 
-namespace HackerRank.Challenges
+class MarsExploration
 {
-    class MarsExploration
+    static int GetResult(string input)
     {
-        static int GetResult (string input)
+        int count = 0;
+        for (int i = 0; i < input.Length; i = i + 3)
         {
-            int count = 0;
-            for (int i = 0; i < input.Length; i = i + 3)
-            {
-                if (input[i] != 'S')
-                    count++;
-                if (input[i + 1] != 'O')
-                    count++;
-                if (input[i + 2] != 'S')
-                    count++;
-            }
-
-            return count;
+            if (input[i] != 'S')
+                count++;
+            if (input[i + 1] != 'O')
+                count++;
+            if (input[i + 2] != 'S')
+                count++;
         }
 
-        public static void Run()
-        {
-            Console.WriteLine(GetResult(Console.ReadLine()));
-        }
+        return count;
+    }
+
+    public static void Run()
+    {
+        Console.WriteLine(GetResult(Console.ReadLine()));
     }
 }

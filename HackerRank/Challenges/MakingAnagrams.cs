@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿namespace HackerRank.Challenges;
 
-namespace HackerRank.Challenges
+class MakingAnagrams
 {
-    class MakingAnagrams
+    static int GetResult(string input1, string input2)
     {
-        static int GetResult(string input1, string input2)
-        {
-            int counter = 0;
+        int counter = 0;
 
-            Dictionary<char, int> alphabetCount = new Dictionary<char, int> {
+        Dictionary<char, int> alphabetCount = new Dictionary<char, int> {
                 {'a',0},
                 {'b',0},
                 {'c',0},
@@ -39,22 +35,21 @@ namespace HackerRank.Challenges
                 {'z',0}
             };
 
-            foreach (char item in input1)
-                alphabetCount[item]++;
+        foreach (char item in input1)
+            alphabetCount[item]++;
 
-            foreach (char item in input2)
-                alphabetCount[item]--;
+        foreach (char item in input2)
+            alphabetCount[item]--;
 
-            counter = alphabetCount.Sum(x => Math.Abs(x.Value));
+        counter = alphabetCount.Sum(x => Math.Abs(x.Value));
 
-            return counter;
-        }
+        return counter;
+    }
 
-        public static void Run()
-        {
-            string input1 = Console.ReadLine();
-            string input2 = Console.ReadLine();
-            Console.WriteLine(GetResult(input1, input2));
-        }
+    public static void Run()
+    {
+        string input1 = Console.ReadLine();
+        string input2 = Console.ReadLine();
+        Console.WriteLine(GetResult(input1, input2));
     }
 }

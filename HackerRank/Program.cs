@@ -1,3 +1,3 @@
 ﻿using HackerRank.Challenges;
 
-BillDivison.Run();
+AVeryBigSum.Run();

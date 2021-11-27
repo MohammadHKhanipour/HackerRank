@@ -1,37 +1,34 @@
-﻿using System;
+﻿namespace HackerRank.Challenges;
 
-namespace HackerRank.Challenges
+class AlternatingCharacters
 {
-    class AlternatingCharacters
+    static int GetResult(string input)
     {
-        static int GetResult(string input)
+        int cursor = 0;
+        int counter = 0;
+        foreach (char item in input)
         {
-            int cursor = 0;
-            int counter = 0;
-            foreach (char item in input)
-            {
-                if (++cursor < input.Length)
-                    if (item == input[cursor])
-                        counter++;
-            }
-            return counter;
+            if (++cursor < input.Length)
+                if (item == input[cursor])
+                    counter++;
+        }
+        return counter;
+    }
+
+    public static void Run()
+    {
+        int input = Convert.ToInt32(Console.ReadLine());
+
+        int[] res = new int[input];
+
+        for (int i = 0; i < input; i++)
+        {
+            res[i] = GetResult(Console.ReadLine());
         }
 
-        public static void Run()
+        foreach (var item in res)
         {
-            int input = Convert.ToInt32(Console.ReadLine());
-
-            int[] res = new int[input];
-
-            for (int i = 0; i < input; i++)
-            {
-                res[i] = GetResult(Console.ReadLine());
-            }
-
-            foreach (var item in res)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine(item);
         }
     }
 }

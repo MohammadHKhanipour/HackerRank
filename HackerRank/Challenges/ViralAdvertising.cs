@@ -1,28 +1,25 @@
-﻿using System;
+﻿namespace HackerRank.Challenges;
 
-namespace HackerRank.Challenges
+class ViralAdvertising
 {
-    class ViralAdvertising
+    static int GetResult(int dayNumber)
     {
-        static int GetResult(int dayNumber)
+        int temp = 2;
+        int a = 2;
+        for (int i = 1; i < dayNumber; i++)
         {
-            int temp = 2;
-            int a = 2;
-            for (int i = 1; i < dayNumber; i++)
-            {
-                a *= 3;
-                a /= 2;
-                temp += a;
-            }
-
-            return temp;
+            a *= 3;
+            a /= 2;
+            temp += a;
         }
 
-        public static void Run()
-        {
-            int dayNumber = Convert.ToInt32(Console.ReadLine());
+        return temp;
+    }
 
-            Console.WriteLine(GetResult(dayNumber));
-        }
+    public static void Run()
+    {
+        int dayNumber = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine(GetResult(dayNumber));
     }
 }
